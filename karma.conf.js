@@ -15,8 +15,8 @@ module.exports = function (config) {
       watched: false
     }],
     preprocessors: {
-      'src/**/*.js': ['rollup'],
-      'test/**/*_spec.js': ['rollup']
+      'src/**/*.js': ['rollupBabel'],
+      'test/**/*_spec.js': ['rollupBabel']
     },
     rollupPreprocessor: {
       output: {
@@ -29,7 +29,11 @@ module.exports = function (config) {
       rollupBabel: {
         base: 'rollup',
         options: {
-          plugins: [require('rollup-plugin-babel')()]
+          plugins: [
+            require('rollup-plugin-node-resolve')(),
+            require('rollup-plugin-commonjs')(),
+            require('rollup-plugin-babel')()
+          ]
         }
       }
     }

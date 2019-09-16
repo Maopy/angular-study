@@ -1,25 +1,28 @@
 {
-  "name": "angualr-study",
+  "name": "angular-study",
   "description": "A modern angular implement.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "no",
-  "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "jasmine-core": "^3.4.0",
-    "karma": "^4.3.0",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-jasmine": "^2.0.1",
-    "karma-rollup-preprocessor": "^7.0.2",
-    "rollup": "^1.21.4",
-    "rollup-plugin-babel": "^4.3.3",
-    "sinon": "^7.4.2"
-  },
   "scripts": {
     "test": "karma start"
   },
   "dependencies": {
-    "jquery": "^3.1.1",
-    "lodash": "^4.17.2"
+    "jquery": "^3.4.1",
+    "lodash-es": "^4.17.15",
+    "standard": "^14.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-rollup-preprocessor": "^7.0.3",
+    "rollup": "^1.29.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "sinon": "^7.4.2"
   }
 }
